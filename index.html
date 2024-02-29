@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>db-first</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid rgb(204, 203, 203);
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: rgb(170, 169, 169);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID_Auto</th>
+                <th>Numero_Telaio</th>
+                <th>Produttore</th>
+                <th>Modello</th>
+                <th>Anno_Produzione</th>
+                <th>Colore</th>
+                <th>Chilometraggio</th>
+                <th>Tipo_Carburante</th>
+                <th>Cambio</th>
+                <th>Prezzo_Partenza</th>
+                <th>Condizioni</th>
+                <th>Anno_Immatricolazione</th>
+                <th>Numero_Proprietari</th>
+                <th>Incidentata</th>
+                <th>Durata_Garanzia</th>
+                <th>Cilindrata(cc)</th>
+                <th>Peso(kg)</th>
+                <th>Potenza(cv)</th>
+                <th>Numero_Porte</th>
+            </tr>
+        </thead>
+        <!-- TIPO DI DATO E ATTRIBUTI -->
+        <tr>
+            <td>INT PRIMARY_KEY</td>
+            <td>VARCHAR(20) PRIMARY_KEY</td>
+            <td>VARCHAR(50)</td>
+            <td>VARCHAR(50)</td>
+            <td>YEAR</td>
+            <td>VARCHAR(30)</td>
+            <td>MEDIUMINT</td>
+            <td>VARCHAR(30)</td>
+            <td>VARCHAR(30)</td>
+            <td>DECIMAL(10,2)</td>
+            <td>VARCHAR(50)</td>
+            <td>YEAR</td>
+            <td>TINYINT</td>
+            <td>TINYINT</td>
+            <td>VARCHAR(50)</td>
+            <td>MEDIUMINT</td>
+            <td>MEDIUMINT</td>
+            <td>SMALLINT</td>
+            <td>TINYINT</td>
+        </tr>
+        <!-- ESEMPIO -->
+        <tr>
+            <td>1</td>
+            <td>JH4TB2H26CC000123</td>
+            <td>Fiat</td>
+            <td>Punto</td>
+            <td>2018</td>
+            <td>Rosso</td>
+            <td>50000</td>
+            <td>Diesel</td>
+            <td>Manuale</td>
+            <td>7500.00</td>
+            <td>Ottimo</td>
+            <td>2018</td>
+            <td>1</td>
+            <td>0</td> <!-- Assumendo che '0' significhi NO E '1' invece SI -->
+            <td>13 mesi</td>
+            <td>1300</td>
+            <td>1050</td>
+            <td>95</td>
+            <td>5</td>
+        </tr>
+        <!-- RIGA VUOTA -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <!-- RIGA VUOTA -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
